@@ -1,0 +1,29 @@
+Input: a is inital condition.
+       b is final codition.
+It solves for one actuator state trajectories.
+Run it 3 times for 3 actuators.
+
+All the codes are to be opened in MATLAB
+Run order:
+1. Run only simple_shooting_manidyn.
+2. Then run six_bar_simulation to visualise the results.
+
+After getting all the theta values use the FK code and get the corresponding phi values and load them in the simulator for simulation.
+
+Sample data given.
+
+simple_shooting_manidyn:
+
+This code solves the boundary value problem for Energy Optimal control of the manipulator. Given some initial and final conditions of the actuated links. This code uses the feedback linearized dynamic model of a six bar.
+Simple shooting method used has been explained in the submitted report.
+
+manidyn:
+
+This code has the feedback linearized dynamics.
+These dynamics equations are for both the states and co-states.
+The derivation is given in the report.
+
+six_bar_simulation:
+
+This code uses the generated actuator trajectories and plots the six-bar in time.
+In the command window you can see the loop number so that you get a sense of time.
